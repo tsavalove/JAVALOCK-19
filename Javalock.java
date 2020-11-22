@@ -3,10 +3,10 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 public class Javalock {
 
-	
+
 	public static void main(String[] args) throws FileNotFoundException {
 		ExInserts();}
-	
+
 
 	private static void ExInserts() {
 		// TODO Auto-generated method stub
@@ -20,9 +20,9 @@ public class Javalock {
 				System.out.println("2.DELETE a Cured one");
 				System.out.println("3.Search and edit Person Status");
 				System.out.println("4.Search based on Covid");
-			
-				
-				
+
+
+
 				System.out.println("5.Log out");
 
 				@SuppressWarnings("resource")
@@ -33,3 +33,5 @@ public class Javalock {
 	}
 	}
 }
+
+
