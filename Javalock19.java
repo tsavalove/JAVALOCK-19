@@ -3,7 +3,7 @@ package CovdTrace2;
 import java.util.Scanner;
 
 public class Javalock19 {
-//MAIN PAGE
+
 	public static void main(String[] args) {
 		Inserts();
 	}
@@ -18,21 +18,21 @@ public class Javalock19 {
 		System.out.println("Select action :");
 		System.out.println("1.Add a Patient");
 		System.out.println("2.Search a Patient");
-		//System.out.println("3.Search and edit Person Status"); test
-		//System.out.println("4.Search based on Covid"); test
+		//System.out.println("3.Search and edit Person Status");
+		//System.out.println("4.Search based on Covid");
 		System.out.println("3.Log out");
 
 
 		int option;
 		option = sc.nextInt();
 		switch(option){
-		
+
 		case 1: option = 1;
-		Patient.addPatients();
+		NewPatient.addPatient();
 		break;
-		
+
 		case 2: option = 2;
-		Patient.searchPatient();
+		SearchPatient.searchPatient();
 		break;
 		/*case 3: option = 3;
 		SchoolYear.findId();
