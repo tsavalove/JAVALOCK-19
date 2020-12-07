@@ -4,13 +4,14 @@ import java.util.Scanner;
 
 public class Patient {
 	protected static Patient[] patients = new Patient[100];
+	//protected static ArrayList<Contact> contacts = new ArrayList<Contact>();
 	private String name;
 	private String surname;
-	public String dob;// date of birth//
-	public String adress;
+	private String dob;// date of birth//
+	private String adress;
 	private int id;
 	private static int count;
-	public int phonenum;
+	private int phonenum;
 
 	public Patient(String name, String surname, String dob, String adress, int phonenum) {
 

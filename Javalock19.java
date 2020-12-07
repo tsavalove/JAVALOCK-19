@@ -21,9 +21,9 @@ public class Javalock19 {
 		System.out.println("2. Add a Patient");
 		System.out.println("3. Search a Patient");
 		System.out.println("4. Delete a Patient");
-		//System.out.println("3.Search and edit Person Status");
-		//System.out.println("4.Search based on Covid");
-		System.out.println("5. Log out");
+		System.out.println("5. Add Contacts");
+		System.out.println("6. Print Contacts");
+		System.out.println("7. Log out");
 
 
 		int option;
@@ -49,21 +49,20 @@ public class Javalock19 {
 		}
 		break;
 
-		/*case 4: option = 4;
-		SchoolYear.findSchoolyear();
-		break;
 		case 5: option = 5;
-		Teacher.printTeachers();
+		AddContact.addContact();
 		break;
+
 		case 6: option = 6;
-		Teacher.findAmka();*/
-		//break;
-		case 5: option = 5;
+		PrintContacts.printContacts();
+		break;
+
+		case 7: option = 7;
 		System.out.println("Our Covid Test Center is closed for today!");
 		flag = false;
 		break;
 		default:
-		System.out.println("Your choice wasn't found.Enter an option [1-6]:");
+		System.out.println("Your choice wasn't found.Enter an option [1-7]:");
 		break;
 		}
 

@@ -20,7 +20,7 @@ public class DeletePatient {
 
 			if(verification.equals(v1) == true) {
 				for (int i = 0; i < Patient.patients.length; i++) {
-					if(i == patient) {
+					if(Patient.patients[i] != null && i == patient) {
 						Patient.patients[i] = null;
 						System.out.println("The process was completed successfully! The patient was cured!");
 						break;
