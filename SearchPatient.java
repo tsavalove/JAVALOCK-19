@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class SearchPatient {
 
-	public static void searchPatient() {
+	public static int searchPatient() {
 		System.out.println("Select action :");
 		System.out.println("1. Search with name");
 		System.out.println("2. Search with id");
@@ -32,7 +32,7 @@ public class SearchPatient {
 					System.out.println("Name:" + Patient.patients[i].getName() + " " + "Surname:" + Patient.patients[i].getSurname() + " " + "Id:" + Patient.patients[i].getId() + " "
 					+ "TelNumber:" + Patient.patients[i].getPhonenum() + " " + "Adress:" + Patient.patients[i].getAdress() + " " + "Date of Birth:" + Patient.patients[i].getDob());
 					flag = 1;
-					break;
+					return i;
 
 				}
 
@@ -40,6 +40,7 @@ public class SearchPatient {
 
 			if (flag == 0) {
 				System.out.println("The patient not found!");
+				return -1;
 			}
 
 			break;
@@ -55,7 +56,7 @@ public class SearchPatient {
 					System.out.println("Name:" + Patient.patients[i].getName() + " " + "Surname:" + Patient.patients[i].getSurname() + " " + "Id:" + Patient.patients[i].getId() + " "
 					+ "TelNumber:" + Patient.patients[i].getPhonenum() + " " + "Adress:" + Patient.patients[i].getAdress() + " " + "Date of Birth:" + Patient.patients[i].getDob());
 					flag = 1;
-					break;
+					return i;
 
 				}
 
@@ -63,6 +64,7 @@ public class SearchPatient {
 
 			if (flag == 0) {
 				System.out.println("The patient not found!");
+				return -1;
 			}
 
 			break;
@@ -77,7 +79,7 @@ public class SearchPatient {
 					System.out.println("Name:" + Patient.patients[i].getName() + " " + "Surname:" + Patient.patients[i].getSurname() + " " + "Id:" + Patient.patients[i].getId() + " "
 					+ "TelNumber:" + Patient.patients[i].getPhonenum() + " " + "Adress:" + Patient.patients[i].getAdress() + " " + "Date of Birth:" + Patient.patients[i].getDob());
 					flag = 1;
-					break;
+					return i;
 
 				}
 
@@ -85,9 +87,12 @@ public class SearchPatient {
 
 			if (flag == 0) {
 				System.out.println("The patient not found!");
+				return -1;
 			}
 			break;
 		}
+
+		return -1;
 
 	}
 }
