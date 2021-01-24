@@ -1,5 +1,5 @@
 package CovdTrace2;
-
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Javalock19 {
