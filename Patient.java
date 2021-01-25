@@ -11,9 +11,9 @@ public class Patient {
 	private String adress;
 	private int id;
 	private static int count;
-	private int phonenum;
+	private String phonenum;
 
-	public Patient(String name, String surname, String dob, String adress, int phonenum) {
+	public Patient(String name, String surname, String dob, String adress, String phonenum) {
 
 		this.name = name;
 		this.surname = surname;
@@ -46,7 +46,7 @@ public class Patient {
 		return this.adress;
 	}
 
-	public int getPhonenum() {
+	public String getPhonenum() {
 		// TODO Auto-generated method stub
 		return this.phonenum;
 	}
