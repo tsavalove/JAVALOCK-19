@@ -15,9 +15,14 @@ public class Patient {
 	private String amka;
 	private String afm;
 	private String mask;
+	private String cough;
+	private String fever;
+	private String tiredness;
+	private String difficultybreathing;
 	private static int count;
 
-	public Patient(String name, String surname, String dob, String adress, String phonenum, String sex, String numID, String amka, String afm, String mask) {
+	public Patient(String name, String surname, String dob, String adress, String phonenum, String sex,
+	String numID, String amka, String afm, String mask, String cough, String fever, String tiredness, String difficultybreathing) {
 
 		this.name = name;
 		this.surname = surname;
@@ -29,6 +34,10 @@ public class Patient {
 		this.amka = amka;
 		this.afm = afm;
 		this.mask = mask;
+		this.cough = cough;
+		this.fever = fever;
+		this.tiredness = tiredness;
+		this.difficultybreathing = difficultybreathing;
 		patients[count] = this;
 
 		count++;
@@ -83,6 +92,26 @@ public class Patient {
 	public String getMask() {
 		// TODO Auto-generated method stub
 		return this.mask;
+	}
+
+	public String getCough() {
+		// TODO Auto-generated method stub
+		return this.cough;
+	}
+
+	public String getFever() {
+		// TODO Auto-generated method stub
+		return this.fever;
+	}
+
+	public String getTiredness() {
+		// TODO Auto-generated method stub
+		return this.tiredness;
+	}
+
+	public String getDifficultybreathing() {
+		// TODO Auto-generated method stub
+		return this.difficultybreathing;
 	}
 
 	public int getId() {

@@ -15,9 +15,14 @@ public class Contact {
 	private String amka;
 	private String afm;
 	private String mask;
+	private String cough;
+	private String fever;
+	private String tiredness;
+	private String difficultybreathing;
 	private static int count;
 
-	public Contact(int patientId, String name, String surname, String adress, String phonenum, String sex, String numID, String amka, String afm, String mask) {
+	public Contact(int patientId, String name, String surname, String adress, String phonenum, String sex,
+	String numID, String amka, String afm, String mask, String cough, String fever, String tiredness, String difficultybreathing) {
 
 		this.patientId = patientId;
 		this.name = name;
@@ -29,6 +34,10 @@ public class Contact {
 		this.amka = amka;
 		this.afm = afm;
 		this.mask = mask;
+		this.cough = cough;
+		this.fever = fever;
+		this.tiredness = tiredness;
+		this.difficultybreathing = difficultybreathing;
 		contacts[count] = this;
 
 		count++;
@@ -45,7 +54,12 @@ public class Contact {
 				  + " Number ID:" + numID
 				  + " Amka:" + amka
 				  + " Afm:" + afm
-				  + " Mask:" + mask;
+				  + " Mask:" + mask
+				  + " Symptoms:"
+				  + " Cough:" + cough
+				  + " Fever:" + fever
+				  + " Tiredness:" + tiredness
+				  + " Difficultybreathing:" + difficultybreathing;
 	return data;
 
 	}
@@ -98,6 +112,26 @@ public class Contact {
 	public String getMask() {
 		// TODO Auto-generated method stub
 		return this.mask;
+	}
+
+	public String getCough() {
+		// TODO Auto-generated method stub
+		return this.cough;
+	}
+
+	public String getFever() {
+		// TODO Auto-generated method stub
+		return this.fever;
+	}
+
+	public String getTiredness() {
+		// TODO Auto-generated method stub
+		return this.tiredness;
+	}
+
+	public String getDifficultybreathing() {
+		// TODO Auto-generated method stub
+		return this.difficultybreathing;
 	}
 
 }

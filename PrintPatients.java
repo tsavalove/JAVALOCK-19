@@ -10,7 +10,9 @@ public class PrintPatients {
 				System.out.println("Name:" + Patient.patients[i].getName() + " " + "Surname:" + Patient.patients[i].getSurname() + " " + "Id:" + Patient.patients[i].getId() + " "
 				+ "TelNumber:" + Patient.patients[i].getPhonenum() + " " + "Adress:" + Patient.patients[i].getAdress() + " " + "Date of Birth:" + Patient.patients[i].getDob()+ " "
 				+ "Sex:" + Patient.patients[i].getSex()+ " " + "Number ID:" + Patient.patients[i].getNumID()+ " " + "Amka:" + Patient.patients[i].getAmka()+ " "
-				+ "Afm:" + Patient.patients[i].getAfm()+ " " + "Mask:" + Patient.patients[i].getMask());
+				+ "Afm:" + Patient.patients[i].getAfm()+ " " + "Mask:" + Patient.patients[i].getMask()+ " " + "Symptoms: " + " " + "Cough:" + Patient.patients[i].getCough()+ " "
+				+ "Fever:" + Patient.patients[i].getFever()+ " " + "Tiredness:" + Patient.patients[i].getTiredness()+ " "
+				+ "Difficultybreathing:" + Patient.patients[i].getDifficultybreathing());
 			}
 		}
 	}
