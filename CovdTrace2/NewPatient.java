@@ -25,7 +25,7 @@ public class NewPatient {
 			System.out.println("Please enter patient's phone number");
 			String phonenum = sc2.nextLine();
 			System.out.println("-----------------------");
-			System.out.println("Please enter patient's sex");
+			System.out.println("Please enter patient's sex:\nMale or Female");
 			String sex = sc2.nextLine();
 			System.out.println("-----------------------");
 			System.out.println("Please enter patient's number ID");
@@ -36,7 +36,7 @@ public class NewPatient {
 			System.out.println("-----------------------");
 			System.out.println("Please enter patient's afm");
 			String afm = sc2.nextLine();
-			System.out.println("Did he wear a mask? Type yes or no");
+			System.out.println("Did the patient wear a mask? Type yes or no");
 			String mask = sc2.nextLine();
 			String mask1 = "yes";
 			String mask2 = "no";
@@ -91,11 +91,12 @@ public class NewPatient {
 			Patient e1 = new Patient(name, surname, dob, adress, phonenum, sex, numID, amka, afm, mask, cough, fever, tiredness, difficultybreathing);
 
 			System.out.println("A new patient has been added to the system");
-			System.out.println("Name:" + e1.getName() + "\n " + "Surname:" + e1.getSurname() + "\n " + "Id:" + e1.getId() + "\n "
-			+ "TelNumber:" + e1.getPhonenum() + "\n " + "Adress:" + e1.getAdress() + " " + "Date of Birth:" + e1.getDob()+ "\n "
-			+ "Sex:" + e1.getSex()+ "\n " + "Number ID:" + e1.getNumID()+ "\n " + "Amka:" + e1.getAmka()+ "\n "
-			+ "Afm:" + e1.getAfm()+ " " + "Mask:" + e1.getMask()+ " " + "Symptoms: " + " " + "Cough:" + e1.getCough()+ "\n "
-			+ "Fever:" + e1.getFever()+ "\n " + "Tiredness:" + e1.getTiredness()+ "\n " + "Difficultybreathing:" + e1.getDifficultybreathing());
+			System.out.println();
+			System.out.println("Name:" + e1.getName() + "\n" + "Surname:" + e1.getSurname() + "\n" + "Id:#" + e1.getId() + "\n"
+			+ "TelNumber:" + e1.getPhonenum() + "\n" + "Adress:" + e1.getAdress() + "\n" + "Date of Birth:" + e1.getDob()+ "\n"
+			+ "Sex:" + e1.getSex()+ "\n" + "Number ID:" + e1.getNumID()+ "\n" + "Amka:" + e1.getAmka()+ "\n"
+			+ "Afm:" + e1.getAfm()+ "\n" + "Mask:" + e1.getMask()+ "\n" +"-------------------- " + "Symptoms Details: " + "--------------------\n" + "Cough:" + e1.getCough()+ "\n"
+			+ "Fever:" + e1.getFever()+ "\n" + "Tiredness:" + e1.getTiredness()+ "\n" + "Difficultybreathing:" + e1.getDifficultybreathing());
 	} catch (Exception InputMismatchException) {
 
 		//TODO: handle exception
