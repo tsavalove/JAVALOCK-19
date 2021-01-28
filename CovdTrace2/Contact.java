@@ -45,21 +45,21 @@ public class Contact {
 
 	@Override
 	public String toString() {
-	String data = "Patient's Id: " + patientId
-				  + " Name: " + name
-				  + " Surname: " + surname
-				  + " Adress:" + adress
-				  + " TelNumber:" + phonenum
-				  + " Sex:" + sex
-				  + " Number ID:" + numID
-				  + " Amka:" + amka
-				  + " Afm:" + afm
-				  + " Mask:" + mask
-				  + " Symptoms:"
-				  + " Cough:" + cough
-				  + " Fever:" + fever
-				  + " Tiredness:" + tiredness
-				  + " Difficultybreathing:" + difficultybreathing;
+	String data = " Patient's Id:" + patientId + "\n"
+				  + " Name:" + name + "\n"
+				  + " Surname:" + surname + "\n"
+				  + " Adress:" + adress + "\n"
+				  + " TelNumber:" + phonenum + "\n"
+				  + " Sex:" + sex + "\n"
+				  + " Number ID:" + numID + "\n"
+				  + " Amka:" + amka + "\n"
+				  + " Afm:" + afm + "\n"
+				  + " Mask:" + mask + "\n"
+				  +"-------------------- " + "Symptoms Details: " + "--------------------\n"
+				  + " Cough:" + cough + "\n"
+				  + " Fever:" + fever + "\n"
+				  + " Tiredness:" + tiredness + "\n"
+				  + " Difficultybreathing:" + difficultybreathing + "\n";
 	return data;
 
 	}
