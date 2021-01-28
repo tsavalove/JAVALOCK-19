@@ -14,7 +14,19 @@ public class Javalock19 {
 	private static void Create(){
 		List<Patient> patientList = new ArrayList<Patient>();
 		List<Contact> contactList = new ArrayList<Contact>();
-		patientList.add(new Patient("Alex","Tsavalos","28/3/1996","Komnhnwn 54","694894446", "Male" ,"1", "28039602413", "166059568", "yes", "yes", "yes", "yes", "yes" ));
+		patientList.add(new Patient("Alex-Herve","Tsavalos","28/3/1996","Komnhnwn 54","694894446", "Male" ,"AZ 949544", "28039602413", "166059568", "yes", "yes", "yes", "yes", "yes" ));
+		patientList.add(new Patient("Antonios","Ntokos","18/12/1994","Symmachidon 24 ","6984201312 ", "Male" ,"AZ 949545", "18129402413", "166059561", "yes", "no", "no", "yes", "yes" ));
+		patientList.add(new Patient("Nektarios","Kasimatis","27/5/1997","Prousiotissis 14","6975634789", "Male" ,"AZ 949546", "27059702413", "166059562", "no", "yes", "yes", "yes", "yes" ));
+		patientList.add(new Patient("Danai","Archontouli","17/6/1998","Zappa 3","6944989890", "Female" ,"AZ 949547", "17069802413", "166059569", "no", "yes", "yes", "yes", "yes" ));
+		patientList.add(new Patient("Dimitrios","Adamou","10/10/1995","Amazwnwn 62","6978398273", "Male" ,"AZ 949548", "10109502413", "166059563", "no", "yes", "yes", "yes", "yes" ));
+		patientList.add(new Patient("Alexandros","Zannis","28/3/1994","Komnhnwn 53","694894447", "Male" ,"AZ 949549", "28039602413", "166059568", "no", "yes", "yes", "yes", "yes" ));
+		patientList.add(new Patient("Kwstas","Blikas","28/3/1998","Komnhnwn 52","694894448", "Male" ,"AZ 949541", "28039602412", "166059568", "yes", "no", "yes", "no", "yes" ));
+		patientList.add(new Patient("Eirini-Pasxou","Naupliotou","28/3/1994","Komnhnwn 51","694894449", "Female" ,"AZ 949542", "28039602414", "166059568", "no", "yes", "yes", "no", "no" ));
+		//Contact list
+		contactList.add(new Contact(1,"Mike", "Kotsabasis", "Smyrnhs 9", "698160143", "Male", "AZ 949577", "12039202413", "1660057581", "yes", "yes", "no", "no", "yes"));
+		contactList.add(new Contact(2,"Giorgos", "Kotsabasis", "Smyrnhs 9", "698160142", "Male", "AZ 949575", "12039202412", "1660057582", "yes", "yes", "no", "no", "yes"));
+		contactList.add(new Contact(3,"Gerogia", "Kotsabasis", "Smyrnhs 9", "698160143", "Female", "AZ 949571", "12039202411", "1660057589", "yes", "yes", "no", "no", "yes"));
+		contactList.add(new Contact(1,"Mikaela", "Flwrou", "Maurogenous Mantw 8A", "698150143", "Female", "AZ 949572", "12039202417", "1660057591", "no", "yes", "yes", "yes", "yes"));
 		
 
 
